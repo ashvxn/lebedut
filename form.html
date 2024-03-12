@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .primary
+    {
+        background-color: rgb(251, 251, 172);
+        border: 1px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  width:500px;
+  height:600px;
+  border-radius: 20px;
+  box-shadow: 10px 7px;
+  ;
+    }
+
+    .center {
+
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(21, 183, 21);
+}
+.submit{
+    width: 80px;
+    height: 25px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: orange;
+}
+.submit:hover{
+    background-color: pink;
+}
+</style>
+<body>
+    <div class = primary>
+
+            <h1 class=center>Le debut</h1>
+            <form id = "registartion_form">
+                <label for="name">Name:</label><br><br>
+                <input type="text" id="Name" name="Name"><br><br>
+                <label for="college">College:</label><br><br>
+                <input type="text" id="college" name="college"><br><br>
+
+                
+                
+                <input type="radio" id="year1" name="year" value="1">
+                <label for="year1">1st Year</label><br><br>
+                <input type="radio" id="year2" name="year" value="2">
+                <label for="year2">2nd Year</label><br><br>
+                <input type="radio" id="year3" name="year" value="3">
+                <label for="year3">3rd Year</label><br><br>
+                <input type="radio" id="year4" name="year" value="4">
+                <label for="year4">4th Year</label><br><br>
+                
+                
+                <input type="submit" value="Submit" class = "submit">
+              </form>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./send.js"></script>
+
+
+</body>
+</html>
